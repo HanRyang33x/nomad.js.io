@@ -1,43 +1,42 @@
 ﻿<!DOCTYPE html>
 <html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-<head>
-  <title>Vanilla Challenge</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="src/style.css" />
-</head>
-
-<body>
-  <div class="allWrap">
-    <div class="well">
-      <p><span class="location"></span><span class="temp"></span><span class="we"></span></p>
+  <body>
+    <div class="allWrap">
+      <div class="well">
+        <p>
+          <span class="location"></span><span class="temp"></span
+          ><span class="we"></span>
+        </p>
+      </div>
+      <div id="time">
+        <p></p>
+      </div>
+      <div id="loginBox">
+        <form>
+          <div class="logout">
+            <input type="text" placeholder="아이디를 입력하세요" />
+            <button role="submit">확인</button>
+          </div>
+          <div class="logined hide">
+            <p></p>
+          </div>
+        </form>
+      </div>
+      <div id="toDo">
+        <form>
+          <div>
+            <input type="text" placeholder="할일을 적어주세요" />
+          </div>
+        </form>
+        <ul id="toDoList" class="hide"></ul>
+      </div>
     </div>
-    <div id="time">
-      <p></p>
-    </div>
-    <div id="loginBox">
-      <form>
-        <div class="logout">
-          <input type="text" placeholder="아이디를 입력하세요">
-          <button role="submit">확인</button>
-        </div>
-        <div class="logined hide">
-          <p></p>
-        </div>
-      </form>
-    </div>
-    <div id="toDo">
-      <form>
-        <div>
-          <input type="text" placeholder="할일을 적어주세요">
-        </div>
-      </form>
-      <ul id="toDoList" class="hide">
-      </ul>
-    </div>
-
-  </div>
-  <script src="src/index.js"></script>
-</body>
-
+    <script src="src/index.js"></script>
+  </body>
 </html>
