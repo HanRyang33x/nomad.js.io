@@ -127,7 +127,12 @@ body {
   background: none;
   border-bottom: 2px solid #333;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 5px 5px;
+}
+
+#toDo input::placeholder {
+  color: #666;
+  font-size: 14px;
 }
 
 #toDo ul {
@@ -135,18 +140,17 @@ body {
 }
 
 #toDo ul li {
-  padding: 0;
-  padding-left: 10px;
+  padding: 0 0 3px 5px;
   list-style: none;
   font-size: 15px;
   line-height: 20px;
-  border-bottom: 1px dotted #333;
+  border-bottom: 1px dashed rgb(136, 136, 136);
   width: 100%;
   position: relative;
 }
 
 #toDo ul li + li {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 #toDo ul li span {
