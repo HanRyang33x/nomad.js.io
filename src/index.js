@@ -42,7 +42,7 @@ function login(e) {
     localStorage.setItem("id", userId);
     logoutEl.classList.add("hide");
     loginEl.classList.remove("hide");
-    loginTextEl.innerText = userId;
+    loginTextEl.innerText = `'${userId}'님 환영합니다.`;
   } else {
     alert("이름을 입력하세요");
   }
@@ -112,7 +112,10 @@ function del(e) {
   const liId = e.target.parentElement.classList.value;
   todoListArr = todoListArr.filter((val) => val.key != liId);
   localStorage.setItem("todoList", JSON.stringify(todoListArr));
-  targetEl.remove();
+  targetEl.classList.add("fadeout");
+  setTimeout(() => {
+    targetEl.remove();
+  }, 500);
 }
 
 loadTodo();
