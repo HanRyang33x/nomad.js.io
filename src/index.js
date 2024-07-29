@@ -53,7 +53,7 @@ function ckLogined() {
   if (key != null) {
     logoutEl.classList.add("hide");
     loginEl.classList.remove("hide");
-    loginTextEl.innerText = key;
+    loginTextEl.innerText = `'${key}'님 환영합니다.`;
   }
 }
 
